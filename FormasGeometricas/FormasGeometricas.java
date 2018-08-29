@@ -1,23 +1,6 @@
 
 import java.lang.Math;
 
-class Programa {
-		
-	public static void main(String[] args) {
-		
-		Circulo c = new Circulo(2);
-		c.calculaArea();
-		System.out.println(c.area);
-		c.imprimeArea();
-
-		Retangulo r = new Retangulo(2,4);
-		r.calculaArea();
-		r.imprimeArea();
-		Quadrado q = new Quadrado(4);
-		q.calculaArea();
-		q.imprimeArea();
-	}
-}
 
 class FormaGeometrica {
 	protected double area;
@@ -63,5 +46,23 @@ class Quadrado extends FormaGeometrica {
 
 	public void calculaArea(){
 		area = lado*lado;
+	}
+}
+
+class Programa {
+		
+	public static void main(String[] args) {
+		
+		Circulo c = new Circulo(2);
+		c.calculaArea();
+		System.out.println(c.area);
+		c.imprimeArea();
+
+		Retangulo r = new Retangulo(2,4);
+		r.calculaArea();
+		r.imprimeArea();
+		Quadrado q = new Quadrado(4);
+		q.calculaArea();
+		q.imprimeArea();
 	}
 }

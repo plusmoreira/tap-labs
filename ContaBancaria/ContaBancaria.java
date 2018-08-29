@@ -1,15 +1,5 @@
 import java.util.ArrayList;
 
-class Programa {
-	public static void main(String[] args) {
-		Cliente c = new Cliente("Pedro","564654654");
-		c.setConta(new ContaCorrente(2200.5));
-		c.setConta(new ContaPoupanca(1110.0));
-		c.setConta(new ContaPoupanca(3300.0));
-		c.atualizaContas();	
-	}
-}
-
 class Conta {
 	protected double saldo;
 	protected double taxaMult;
@@ -82,4 +72,14 @@ class Cliente{
 		}
 	}
 
+}
+
+class Programa {
+	public static void main(String[] args) {
+		Cliente c = new Cliente("Pedro","564654654");
+		c.setConta(new ContaCorrente(2200.5));
+		c.setConta(new ContaPoupanca(1110.0));
+		c.setConta(new ContaPoupanca(3300.0));
+		c.atualizaContas();	
+	}
 }
